@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="assets/main.gif">
+
+    <main>
+
+        <h1> SIGN UP</h1>
+
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sunt rerum, perspiciatis non voluptates beatae ipsam aut neque tempora iure!</h2>
+        <span>Already a member? Click here to login.</span>
+
+        <form action="index.html" method="post" target="_self" autocomplete="on">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" placeholder="example@host.com" required autofocus>
+            <label for="birth">Birthdate: <span>You must be at least 13 years old to play!</span></label>
+            <input type="date" id="birth" name="birthdate" min="1922-12-31" required>
+            <!--TODO: Add a max date with js-->
+            <label for="pass1">Password:</label>
+            <input type="password" id="pass1" name="pass1" placeholder="********" minlength="8" required>
+            <label for="pass2">Confirm Password:</label>
+            <input type="password" id="pass2" name="pass2" placeholder="********" minlength="8" required>
+            <!--TODO: Validate with js-->
+            <label for="char-name">Character Name:</label>
+            <input type="text" id="char-name" name="char-name" maxlength="32" required>
+            <fieldset>
+                <legend>Character Gender:</legend>
+                <input type="radio" name="gender" id="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Class:</legend>
+                <input type="radio" name="class" id="warrior" required>
+                <label for="warrior">warrior</label>
+                <input type="radio" name="class" id="archer">
+                <label for="archer">Archer</label>
+                <input type="radio" name="class" id="mage">
+                <label for="mage">Mage</label>
+                <input type="radio" name="class" id="goblin">
+                <label for="goblin">Goblin</label>
+            </fieldset>
+            <input type="checkbox" id="terms" name="termsAccepted" value="true" required>
+            <label for="terms">I accept the terms and conditions.</label>
+            <button type="submit">Sign up</button>
+            <aside>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo labore reiciendis enim error eum, repellendus ullam voluptatibus molestiae quaerat inventore?</aside>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
