@@ -100,6 +100,16 @@ input {
     font-size: large;
 }
 
+input:focus,
+input:focus-visible {
+    box-shadow: 0px 0px 4px 0px var(--primary);
+    outline: none;
+}
+
+form.submitted input:invalid {
+    border: 1px solid red;
+}
+
 input[type='radio']:after,
 input[type='radio']:checked:after,
 input[type='checkbox']:after,
@@ -133,6 +143,7 @@ button[type='submit'] {
     font-size: larger;
     cursor: pointer;
     margin-bottom: 2rem;
+    padding: 8px 0px;
 }
 
 aside {

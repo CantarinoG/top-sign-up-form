@@ -8,6 +8,7 @@
     <title>Cyber Finale | Sign Up</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="script/validation.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <h2>The year is 2090. Corruption and greed have unleashed chaos on this world. Someone has to do something about it. Are you up to the task? <span>Sign up now!</span></h2>
         <span>Already a member? Click <a href="#">here</a> to login.</span>
 
-        <form action="index.html" method="post" target="_self" autocomplete="on">
+        <form action="index.html" method="post" target="_self" autocomplete="on" id="form">
 
             <div class="data-container"><label for="mail">Email:</label>
                 <input type="email" id="mail" name="mail" placeholder="example@host.com" required autofocus>
@@ -75,7 +76,7 @@
                 <input type="checkbox" id="terms" name="termsAccepted" value="true" required>
                 <label for="terms">I accept the terms and conditions.</label>
             </div>
-            <button type="submit">Sign up</button>
+            <button type="submit" id="submit">Sign up</button>
             <aside><span>Terms and conditions: </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ea, voluptatibus recusandae ducimus magni eius sequi consectetur rem maxime cupiditate distinctio incidunt dolores mollitia debitis iste
                 quisquam quaerat eos provident sint aliquid accusamus harum eligendi. Dolore molestiae laboriosam quae numquam quo nostrum quam provident veniam cum voluptatibus, magni quasi. Necessitatibus adipisci sit quae, quidem deserunt quas ducimus
                 molestiae fugiat velit ipsam voluptas, illo alias accusantium voluptatem recusandae a animi sint dignissimos sed, amet nesciunt tempora assumenda? Quis suscipit quia modi quo! Alias consequatur quisquam, facere soluta dolorem eveniet magni
