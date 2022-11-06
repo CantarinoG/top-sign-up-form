@@ -157,6 +157,10 @@ aside {
     font-size: larger;
 }
 
+label[for='terms'] {
+    cursor: pointer;
+}
+
 
 /* Scrollbar styling */
 
@@ -217,7 +221,8 @@ aside {
 
 /* Tooltip text */
 
-.tooltip .tooltiptext {
+.tooltiptext,
+.tooltiptext-js {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -227,6 +232,12 @@ aside {
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+}
+
+.tooltip-js .tooltiptext-js {
+    visibility: visible;
+    position: relative;
+    top: -5px;
 }
 
 
