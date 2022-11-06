@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 :root {
     --background: #292F36;
-    --primary: #6ba733;
+    --primary: #99ff39;
     --text: #F7FFF7;
     --ps2: 'Press Start 2P', cursive;
     --vt323: 'VT323', monospace;
@@ -71,4 +71,64 @@ label {
     font-size: larger;
 }
 
-input {}
+fieldset {
+    margin-top: 2rem;
+}
+
+fieldset legend {
+    color: var(--primary);
+    font-size: larger;
+}
+
+fieldset label {
+    color: var(--text);
+    cursor: pointer;
+}
+
+input {
+    background-color: black;
+    border: 1px solid var(--primary);
+    color: var(--text);
+    font-family: var(--vt323);
+    font-size: large;
+}
+
+input[type='radio']:after,
+input[type='radio']:checked:after,
+input[type='checkbox']:after,
+input[type='checkbox']:checked:after {
+    width: 1.2ch;
+    height: 1.2ch;
+    top: -2px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+input[type='radio']:checked:after,
+input[type='checkbox']:checked:after {
+    background-color: var(--primary);
+}
+
+.accept-term {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+button[type='submit'] {
+    border: none;
+    background-color: var(--primary);
+    font-family: var(--vt323);
+    font-size: larger;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+aside {
+    color: var(--text);
+    font-size: larger;
+}
