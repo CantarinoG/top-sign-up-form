@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +12,8 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="script/validation.js" defer></script>
+
+
 </head>
 
 <body>
@@ -64,13 +69,17 @@
             <fieldset>
                 <legend>Select Your Class:</legend>
                 <input type="radio" name="class" id="rebel" required>
-                <label for="rebel">Rebel</label>
+                <label class="tooltip" for="rebel">Rebel <span class="tooltiptext">Rebel: You want to defeat the system!<br>*Bonuses: +2 Intelligence; +1 Endurance.</span>
+                </label>
                 <input type="radio" name="class" id="thief">
-                <label for="thief">Thief</label>
+                <label class="tooltip" for="thief">Thief <span class="tooltiptext">Thief: You are on your own trying to survive! <br> *Bonuses: +2 Agility; +1 Charisma; Stealth Attacks deal 30% more damage.</span>
+                </label>
                 <input type="radio" name="class" id="enforcer">
-                <label for="enforcer">Enforcer</label>
+                <label class="tooltip" for="enforcer">Enforcer <span class="tooltiptext">Enforcer: You work for the powerful and want to become one of them! <br> *Bonuses: +2 Strength; +2 Endurance.</span>
+                </label>
                 <input type="radio" name="class" id="android">
-                <label for="android">Android</label>
+                <label class="tooltip" for="android">Android <span class="tooltiptext">Android: You just freed yourself and want to explore the world! *Bonuses: +1 Strength; +1 Perception; +1 Endurance; +1 Intelligence. </span>
+                </label>
             </fieldset>
             <div class="accept-term">
                 <input type="checkbox" id="terms" name="termsAccepted" value="true" required>
