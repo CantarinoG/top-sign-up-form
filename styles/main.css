@@ -7,6 +7,11 @@
     --vt323: 'VT323', monospace;
 }
 
+*::selection {
+    background-color: black;
+    color: var(--primary);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -230,4 +235,27 @@ aside {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+    body img {
+        height: auto;
+        width: 100vw;
+        border: none;
+        max-width: 100%;
+    }
+    body img+span {
+        top: 0px;
+    }
+    main {
+        padding: 1rem 0px;
+        height: auto;
+        overflow: visible;
+    }
+    form {
+        padding: 1rem;
+    }
 }
