@@ -5,33 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cyber Finale | Sign Up</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
-    <img src="assets/main.gif">
+    <img src="assets/main.gif" alt="Gas Station in a futuristic city. Pixel art.">
 
     <main>
 
-        <h1> SIGN UP</h1>
+        <h1> Cyber Finale </h1>
 
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sunt rerum, perspiciatis non voluptates beatae ipsam aut neque tempora iure!</h2>
-        <span>Already a member? Click here to login.</span>
+        <h2>The year is 2090. Corruption and greed have unleashed chaos on this world. Someone has to do something about it. Are you up to the task? <span>Sign up now!</span></h2>
+        <span>Already a member? Click <a href="#">here</a> to login.</span>
 
         <form action="index.html" method="post" target="_self" autocomplete="on">
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail" placeholder="example@host.com" required autofocus>
-            <label for="birth">Birthdate: <span>You must be at least 13 years old to play!</span></label>
-            <input type="date" id="birth" name="birthdate" min="1922-12-31" required>
+
+            <div class="data-container"><label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" placeholder="example@host.com" required autofocus>
+            </div>
+
+            <div class="data-container"><label for="birth">Birthdate: (*You must be at least 13 years old to play!)</label>
+                <input type="date" id="birth" name="birthdate" min="1922-12-31" required>
+            </div>
+
             <!--TODO: Add a max date with js-->
-            <label for="pass1">Password:</label>
-            <input type="password" id="pass1" name="pass1" placeholder="********" minlength="8" required>
-            <label for="pass2">Confirm Password:</label>
-            <input type="password" id="pass2" name="pass2" placeholder="********" minlength="8" required>
+
+            <div class="data-container">
+                <label for="pass1">Password:</label>
+                <input type="password" id="pass1" name="pass1" placeholder="********" minlength="8" required>
+            </div>
+
+            <div class="data-container">
+                <label for="pass2">Confirm Password:</label>
+                <input type="password" id="pass2" name="pass2" placeholder="********" minlength="8" required>
+            </div>
+
             <!--TODO: Validate with js-->
-            <label for="char-name">Character Name:</label>
-            <input type="text" id="char-name" name="char-name" maxlength="32" required>
+
+            <div class="data-container">
+                <label for="char-name">Character Name:</label>
+                <input type="text" id="char-name" name="char-name" maxlength="32" required>
+            </div>
+
             <fieldset>
                 <legend>Character Gender:</legend>
                 <input type="radio" name="gender" id="male" required>
@@ -43,14 +61,14 @@
             </fieldset>
             <fieldset>
                 <legend>Select Your Class:</legend>
-                <input type="radio" name="class" id="warrior" required>
-                <label for="warrior">warrior</label>
-                <input type="radio" name="class" id="archer">
-                <label for="archer">Archer</label>
-                <input type="radio" name="class" id="mage">
-                <label for="mage">Mage</label>
-                <input type="radio" name="class" id="goblin">
-                <label for="goblin">Goblin</label>
+                <input type="radio" name="class" id="rebel" required>
+                <label for="rebel">Rebel</label>
+                <input type="radio" name="class" id="thief">
+                <label for="thief">Thief</label>
+                <input type="radio" name="class" id="enforcer">
+                <label for="enforcer">Enforcer</label>
+                <input type="radio" name="class" id="android">
+                <label for="android">Android</label>
             </fieldset>
             <input type="checkbox" id="terms" name="termsAccepted" value="true" required>
             <label for="terms">I accept the terms and conditions.</label>

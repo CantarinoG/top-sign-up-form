@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+:root {
+    --background: #292F36;
+    --primary: #6ba733;
+    --text: #F7FFF7;
+    --ps2: 'Press Start 2P', cursive;
+    --vt323: 'VT323', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    font-family: var(--vt323);
+}
+
+body img {
+    height: 100vh;
+    border-right: 2px groove var(--primary);
+}
+
+main {
+    padding: 4rem;
+    height: 100vh;
+    overflow: auto;
+}
+
+h1 {
+    color: var(--primary);
+    font-family: var(--ps2);
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--text);
+    font-size: xx-large;
+    text-align: center;
+}
+
+span {
+    color: var(--primary);
+    text-align: center;
+    display: block;
+}
+
+span a {
+    color: inherit;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20%;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 2rem;
+    color: var(--primary);
+    font-size: larger;
+}
+
+input {}
